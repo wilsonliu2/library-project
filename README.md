@@ -6,7 +6,7 @@ This project is a simple library application built using HTML, CSS, and JavaScri
 
 ## Screenshot
 
-![Screenshot of Dashboard](./assets/screenshot.png)
+![Screenshot of Library](./assets/screenshot.png)
 
 You can also view a live demo of the project [here](https://wilsonliu2.github.io/library-project/).
 
