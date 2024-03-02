@@ -1,0 +1,214 @@
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+:root {
+    --bar-color: #475569;
+    --background-color: #e5e7eb;
+    --green: #4ade80;
+    --red: #f87171;
+    --secondary-font-color: #64748b;
+    --blue: #60a5fa;
+    --form-color: #fff;
+}
+
+/* top */
+.banner {
+    background-color: var(--bar-color);
+    color: #fff;
+    min-height: 100px;
+    font-size: 4.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contents */
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 300px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* card that contain book informations */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    width: 200px;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.10) 2px 2px 4px;
+    overflow: hidden;
+}
+
+.title {
+    text-align: center;
+}
+
+.author, .pages, .read {
+    color: var(--secondary-font-color);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* styling for read status */
+.read {
+    font-style: italic;
+}
+
+.completed {
+    color: var(--blue)
+}
+
+.reading {
+    color: var(--green)
+}
+
+/* styling for the icons */
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.buttons {
+    display: flex;
+    gap: 33px;
+}
+
+.check {
+    background-color: var(--green);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.delete {
+    background-color: var(--red);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* form */
+form {
+    background-color: var(--form-color);
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    border: #000 solid 1px;
+    box-shadow: rgba(0, 0, 0, 0.10) 3px 3px 6px;
+}
+
+.form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+/* close button */
+.form-close-btn {
+    height: 25px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.form-header {
+    align-self: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* input boxes */
+input {
+    border-style: solid;
+}
+
+[type="text"] {
+    width: 250px;
+}
+
+[type="number"] {
+    width: 100px;
+}
+
+[type="checkbox"] {
+    cursor: pointer;
+}
+
+.labels-inputs-container {
+    display: flex;
+    gap: 10px;
+}
+
+.inputs, .labels {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+label {
+    color: var(--secondary-font-color);
+    font-weight: bold;
+}
+
+.submit-book-btn {
+    align-self: center;
+    width: 200px;
+    background-color: var(--green);
+    border: 0;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* footer */
+.footer {
+    background-color: var(--bar-color);
+    min-height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-btn {
+    border-radius: 10px;
+    width: 200px;
+    height: 70px;
+    font-size: 2rem;
+    border: 0;
+    background-color: var(--green);
+    color: #fff;
+    cursor: pointer;
+}
